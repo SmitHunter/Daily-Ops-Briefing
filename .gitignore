@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.venv/
+venv/
+env/
+.eggs/
+*.egg-info/
+*.egg
+
+# Generated data - rebuilt by setup_data.py on deploy
+data/pos.db
+data/transactions.json
+
+# Secrets and environment
+.env
+*.key
+.env.local
+.env.*.local
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build artefacts
+*.log
+dist/
+build/
+*.whl
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+
+# Ruff
+.ruff_cache/

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: daily-ops-briefing
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt && python setup_data.py"
+    startCommand: "gunicorn app:app --workers 1 --threads 2 --timeout 120"
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: BRIEFING_TOKEN
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11.9"

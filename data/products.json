@@ -1,0 +1,3794 @@
+[
+  {
+    "plu": "41001",
+    "name": "Small Flat White",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41002",
+    "name": "Regular Flat White",
+    "category": "Coffee",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41003",
+    "name": "Large Flat White",
+    "category": "Coffee",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41004",
+    "name": "Small Latte",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41005",
+    "name": "Regular Latte",
+    "category": "Coffee",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41006",
+    "name": "Large Latte",
+    "category": "Coffee",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41007",
+    "name": "Small Cappuccino",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41008",
+    "name": "Regular Cappuccino",
+    "category": "Coffee",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41009",
+    "name": "Large Cappuccino",
+    "category": "Coffee",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41010",
+    "name": "Small Long Black",
+    "category": "Coffee",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41011",
+    "name": "Regular Long Black",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41012",
+    "name": "Large Long Black",
+    "category": "Coffee",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41013",
+    "name": "Small Espresso",
+    "category": "Coffee",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41014",
+    "name": "Regular Espresso",
+    "category": "Coffee",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41015",
+    "name": "Large Espresso",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41016",
+    "name": "Small Macchiato",
+    "category": "Coffee",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41017",
+    "name": "Regular Macchiato",
+    "category": "Coffee",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41018",
+    "name": "Large Macchiato",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41019",
+    "name": "Small Mocha",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41020",
+    "name": "Regular Mocha",
+    "category": "Coffee",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41021",
+    "name": "Large Mocha",
+    "category": "Coffee",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41022",
+    "name": "Small Hot Chocolate",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41023",
+    "name": "Regular Hot Chocolate",
+    "category": "Coffee",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41024",
+    "name": "Large Hot Chocolate",
+    "category": "Coffee",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41025",
+    "name": "Small Filter Coffee",
+    "category": "Coffee",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41026",
+    "name": "Regular Filter Coffee",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41027",
+    "name": "Large Filter Coffee",
+    "category": "Coffee",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41028",
+    "name": "Small Oat Latte",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41029",
+    "name": "Regular Oat Latte",
+    "category": "Coffee",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41030",
+    "name": "Large Oat Latte",
+    "category": "Coffee",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41031",
+    "name": "Small Almond Flat White",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41032",
+    "name": "Regular Almond Flat White",
+    "category": "Coffee",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41033",
+    "name": "Large Almond Flat White",
+    "category": "Coffee",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41034",
+    "name": "Small Piccolo",
+    "category": "Coffee",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41035",
+    "name": "Regular Piccolo",
+    "category": "Coffee",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41036",
+    "name": "Large Piccolo",
+    "category": "Coffee",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41037",
+    "name": "Small Breakfast Tea",
+    "category": "Tea",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41038",
+    "name": "Regular Breakfast Tea",
+    "category": "Tea",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41039",
+    "name": "Large Breakfast Tea",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41040",
+    "name": "Small Earl Grey",
+    "category": "Tea",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41041",
+    "name": "Regular Earl Grey",
+    "category": "Tea",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41042",
+    "name": "Large Earl Grey",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41043",
+    "name": "Small Green Tea",
+    "category": "Tea",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41044",
+    "name": "Regular Green Tea",
+    "category": "Tea",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41045",
+    "name": "Large Green Tea",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41046",
+    "name": "Small Peppermint Tea",
+    "category": "Tea",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41047",
+    "name": "Regular Peppermint Tea",
+    "category": "Tea",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41048",
+    "name": "Large Peppermint Tea",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41049",
+    "name": "Small Chamomile Tea",
+    "category": "Tea",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41050",
+    "name": "Regular Chamomile Tea",
+    "category": "Tea",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41051",
+    "name": "Large Chamomile Tea",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41052",
+    "name": "Small Chai Latte",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41053",
+    "name": "Regular Chai Latte",
+    "category": "Tea",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41054",
+    "name": "Large Chai Latte",
+    "category": "Tea",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41055",
+    "name": "Small Matcha Latte",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41056",
+    "name": "Regular Matcha Latte",
+    "category": "Tea",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41057",
+    "name": "Large Matcha Latte",
+    "category": "Tea",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41058",
+    "name": "Small Lemon Ginger Tea",
+    "category": "Tea",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41059",
+    "name": "Regular Lemon Ginger Tea",
+    "category": "Tea",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41060",
+    "name": "Large Lemon Ginger Tea",
+    "category": "Tea",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41061",
+    "name": "Small Iced Latte",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41062",
+    "name": "Regular Iced Latte",
+    "category": "Cold Drinks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41063",
+    "name": "Large Iced Latte",
+    "category": "Cold Drinks",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41064",
+    "name": "Small Iced Mocha",
+    "category": "Cold Drinks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41065",
+    "name": "Regular Iced Mocha",
+    "category": "Cold Drinks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41066",
+    "name": "Large Iced Mocha",
+    "category": "Cold Drinks",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41067",
+    "name": "Small Iced Chocolate",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41068",
+    "name": "Regular Iced Chocolate",
+    "category": "Cold Drinks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41069",
+    "name": "Large Iced Chocolate",
+    "category": "Cold Drinks",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41070",
+    "name": "Small House Lemonade",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41071",
+    "name": "Regular House Lemonade",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41072",
+    "name": "Large House Lemonade",
+    "category": "Cold Drinks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41073",
+    "name": "Small Citrus Fizz",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41074",
+    "name": "Regular Citrus Fizz",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41075",
+    "name": "Large Citrus Fizz",
+    "category": "Cold Drinks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41076",
+    "name": "Small Ginger Beer",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41077",
+    "name": "Regular Ginger Beer",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41078",
+    "name": "Large Ginger Beer",
+    "category": "Cold Drinks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41079",
+    "name": "Small House Cola",
+    "category": "Cold Drinks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41080",
+    "name": "Regular House Cola",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41081",
+    "name": "Large House Cola",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41082",
+    "name": "Small Sparkling Water",
+    "category": "Cold Drinks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41083",
+    "name": "Regular Sparkling Water",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41084",
+    "name": "Large Sparkling Water",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41085",
+    "name": "Small Still Water",
+    "category": "Cold Drinks",
+    "price": 2.5,
+    "price_delivery": 4.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41086",
+    "name": "Regular Still Water",
+    "category": "Cold Drinks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41087",
+    "name": "Large Still Water",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41088",
+    "name": "Small Peach Iced Tea",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41089",
+    "name": "Regular Peach Iced Tea",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41090",
+    "name": "Large Peach Iced Tea",
+    "category": "Cold Drinks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41091",
+    "name": "Small Berry Cooler",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41092",
+    "name": "Regular Berry Cooler",
+    "category": "Cold Drinks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41093",
+    "name": "Large Berry Cooler",
+    "category": "Cold Drinks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41094",
+    "name": "Small Mint Lime Soda",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41095",
+    "name": "Regular Mint Lime Soda",
+    "category": "Cold Drinks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41096",
+    "name": "Large Mint Lime Soda",
+    "category": "Cold Drinks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41097",
+    "name": "Small Orange Juice",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41098",
+    "name": "Regular Orange Juice",
+    "category": "Cold Drinks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41099",
+    "name": "Large Orange Juice",
+    "category": "Cold Drinks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41100",
+    "name": "Small Apple Juice",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41101",
+    "name": "Regular Apple Juice",
+    "category": "Cold Drinks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41102",
+    "name": "Large Apple Juice",
+    "category": "Cold Drinks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41103",
+    "name": "Small Cucumber Soda",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41104",
+    "name": "Regular Cucumber Soda",
+    "category": "Cold Drinks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41105",
+    "name": "Large Cucumber Soda",
+    "category": "Cold Drinks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41106",
+    "name": "Small Iced Tea",
+    "category": "Cold Drinks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41107",
+    "name": "Regular Iced Tea",
+    "category": "Cold Drinks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41108",
+    "name": "Large Iced Tea",
+    "category": "Cold Drinks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41109",
+    "name": "Bacon and Egg Roll",
+    "category": "Breakfast",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41110",
+    "name": "Mushroom Toast",
+    "category": "Breakfast",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41111",
+    "name": "Avocado Toast",
+    "category": "Breakfast",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41112",
+    "name": "Breakfast Wrap",
+    "category": "Breakfast",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41113",
+    "name": "Granola Cup",
+    "category": "Breakfast",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41114",
+    "name": "Overnight Oats",
+    "category": "Breakfast",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41115",
+    "name": "Yoghurt Bowl",
+    "category": "Breakfast",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41116",
+    "name": "Porridge Cup",
+    "category": "Breakfast",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41117",
+    "name": "Banana Bread Slice",
+    "category": "Breakfast",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41118",
+    "name": "Hash Brown Pair",
+    "category": "Breakfast",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41119",
+    "name": "Fruit Cup",
+    "category": "Breakfast",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41120",
+    "name": "Egg and Cheese Muffin",
+    "category": "Breakfast",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41121",
+    "name": "Tomato Toast",
+    "category": "Breakfast",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41122",
+    "name": "Scrambled Egg Bowl",
+    "category": "Breakfast",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41123",
+    "name": "Veggie Breakfast Plate",
+    "category": "Breakfast",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41124",
+    "name": "Pancake Stack",
+    "category": "Breakfast",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41125",
+    "name": "Bircher Muesli",
+    "category": "Breakfast",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41126",
+    "name": "Savoury Muffin",
+    "category": "Breakfast",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41127",
+    "name": "Cheese Toastie",
+    "category": "Breakfast",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41128",
+    "name": "Baked Beans on Toast",
+    "category": "Breakfast",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41129",
+    "name": "Spinach and Feta Roll",
+    "category": "Breakfast",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41130",
+    "name": "Breakfast Burrito",
+    "category": "Breakfast",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41131",
+    "name": "Cinnamon Toast",
+    "category": "Breakfast",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41132",
+    "name": "Berry Compote Bowl",
+    "category": "Breakfast",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41133",
+    "name": "Potato Rosti",
+    "category": "Breakfast",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41134",
+    "name": "Halloumi Roll",
+    "category": "Breakfast",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41135",
+    "name": "Smoked Salmon Toast",
+    "category": "Breakfast",
+    "price": 12.0,
+    "price_delivery": 13.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41136",
+    "name": "Chia Pudding",
+    "category": "Breakfast",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41137",
+    "name": "Apple Cinnamon Oats",
+    "category": "Breakfast",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41138",
+    "name": "Herb Omelette",
+    "category": "Breakfast",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41139",
+    "name": "Corn Fritters",
+    "category": "Breakfast",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41140",
+    "name": "Tomato and Herb Shakshuka",
+    "category": "Breakfast",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41141",
+    "name": "Maple Granola Jar",
+    "category": "Breakfast",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41142",
+    "name": "Peanut Butter Toast",
+    "category": "Breakfast",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41143",
+    "name": "Veggie Frittata Slice",
+    "category": "Breakfast",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41144",
+    "name": "Rice Porridge",
+    "category": "Breakfast",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41145",
+    "name": "Breakfast Salad",
+    "category": "Breakfast",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41146",
+    "name": "Seeded Crumpets",
+    "category": "Breakfast",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41147",
+    "name": "Warm Fruit Crumble Cup",
+    "category": "Breakfast",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41148",
+    "name": "Cottage Cheese Bowl",
+    "category": "Breakfast",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41149",
+    "name": "Chicken and Avocado on White",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41150",
+    "name": "Chicken and Avocado on Grain",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41151",
+    "name": "Chicken and Avocado on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41152",
+    "name": "Roast Beef and Mustard on White",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41153",
+    "name": "Roast Beef and Mustard on Grain",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41154",
+    "name": "Roast Beef and Mustard on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41155",
+    "name": "Ham and Cheese on White",
+    "category": "Sandwiches",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41156",
+    "name": "Ham and Cheese on Grain",
+    "category": "Sandwiches",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41157",
+    "name": "Ham and Cheese on Sourdough",
+    "category": "Sandwiches",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41158",
+    "name": "Turkey and Cranberry on White",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41159",
+    "name": "Turkey and Cranberry on Grain",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41160",
+    "name": "Turkey and Cranberry on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41161",
+    "name": "Tuna and Celery on White",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41162",
+    "name": "Tuna and Celery on Grain",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41163",
+    "name": "Tuna and Celery on Sourdough",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41164",
+    "name": "Egg and Lettuce on White",
+    "category": "Sandwiches",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41165",
+    "name": "Egg and Lettuce on Grain",
+    "category": "Sandwiches",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41166",
+    "name": "Egg and Lettuce on Sourdough",
+    "category": "Sandwiches",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41167",
+    "name": "Cheese and Tomato on White",
+    "category": "Sandwiches",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41168",
+    "name": "Cheese and Tomato on Grain",
+    "category": "Sandwiches",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41169",
+    "name": "Cheese and Tomato on Sourdough",
+    "category": "Sandwiches",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41170",
+    "name": "Falafel and Slaw on White",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41171",
+    "name": "Falafel and Slaw on Grain",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41172",
+    "name": "Falafel and Slaw on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41173",
+    "name": "Grilled Vegetables on White",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41174",
+    "name": "Grilled Vegetables on Grain",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41175",
+    "name": "Grilled Vegetables on Sourdough",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41176",
+    "name": "Pesto Chicken on White",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41177",
+    "name": "Pesto Chicken on Grain",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41178",
+    "name": "Pesto Chicken on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41179",
+    "name": "Smoked Salmon and Dill on White",
+    "category": "Sandwiches",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41180",
+    "name": "Smoked Salmon and Dill on Grain",
+    "category": "Sandwiches",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41181",
+    "name": "Smoked Salmon and Dill on Sourdough",
+    "category": "Sandwiches",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41182",
+    "name": "BLT on White",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41183",
+    "name": "BLT on Grain",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41184",
+    "name": "BLT on Sourdough",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41185",
+    "name": "Chicken Schnitzel on White",
+    "category": "Sandwiches",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41186",
+    "name": "Chicken Schnitzel on Grain",
+    "category": "Sandwiches",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41187",
+    "name": "Chicken Schnitzel on Sourdough",
+    "category": "Sandwiches",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41188",
+    "name": "Caprese on White",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41189",
+    "name": "Caprese on Grain",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41190",
+    "name": "Caprese on Sourdough",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41191",
+    "name": "Hummus and Roast Veg on White",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41192",
+    "name": "Hummus and Roast Veg on Grain",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41193",
+    "name": "Hummus and Roast Veg on Sourdough",
+    "category": "Sandwiches",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41194",
+    "name": "Curried Egg on White",
+    "category": "Sandwiches",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41195",
+    "name": "Curried Egg on Grain",
+    "category": "Sandwiches",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41196",
+    "name": "Curried Egg on Sourdough",
+    "category": "Sandwiches",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41197",
+    "name": "Pulled Mushroom on White",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41198",
+    "name": "Pulled Mushroom on Grain",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41199",
+    "name": "Pulled Mushroom on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41200",
+    "name": "Lemon Herb Chicken on White",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41201",
+    "name": "Lemon Herb Chicken on Grain",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41202",
+    "name": "Lemon Herb Chicken on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41203",
+    "name": "Apple Slaw Pork on White",
+    "category": "Sandwiches",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41204",
+    "name": "Apple Slaw Pork on Grain",
+    "category": "Sandwiches",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41205",
+    "name": "Apple Slaw Pork on Sourdough",
+    "category": "Sandwiches",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41206",
+    "name": "Garden Club on White",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41207",
+    "name": "Garden Club on Grain",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41208",
+    "name": "Garden Club on Sourdough",
+    "category": "Sandwiches",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41209",
+    "name": "Regular Chicken Wrap",
+    "category": "Wraps",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41210",
+    "name": "Large Chicken Wrap",
+    "category": "Wraps",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41211",
+    "name": "Regular Falafel Wrap",
+    "category": "Wraps",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41212",
+    "name": "Large Falafel Wrap",
+    "category": "Wraps",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41213",
+    "name": "Regular Lamb Wrap",
+    "category": "Wraps",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41214",
+    "name": "Large Lamb Wrap",
+    "category": "Wraps",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41215",
+    "name": "Regular Halloumi Wrap",
+    "category": "Wraps",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41216",
+    "name": "Large Halloumi Wrap",
+    "category": "Wraps",
+    "price": 12.0,
+    "price_delivery": 13.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41217",
+    "name": "Regular Beef Wrap",
+    "category": "Wraps",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41218",
+    "name": "Large Beef Wrap",
+    "category": "Wraps",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41219",
+    "name": "Regular Roast Pumpkin Wrap",
+    "category": "Wraps",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41220",
+    "name": "Large Roast Pumpkin Wrap",
+    "category": "Wraps",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41221",
+    "name": "Regular Tofu Wrap",
+    "category": "Wraps",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41222",
+    "name": "Large Tofu Wrap",
+    "category": "Wraps",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41223",
+    "name": "Regular Crumbed Fish Wrap",
+    "category": "Wraps",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41224",
+    "name": "Large Crumbed Fish Wrap",
+    "category": "Wraps",
+    "price": 13.0,
+    "price_delivery": 14.5,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41225",
+    "name": "Regular Greek Salad Wrap",
+    "category": "Wraps",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41226",
+    "name": "Large Greek Salad Wrap",
+    "category": "Wraps",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41227",
+    "name": "Regular Spiced Cauliflower Wrap",
+    "category": "Wraps",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41228",
+    "name": "Large Spiced Cauliflower Wrap",
+    "category": "Wraps",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41229",
+    "name": "Regular Turkey Wrap",
+    "category": "Wraps",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41230",
+    "name": "Large Turkey Wrap",
+    "category": "Wraps",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41231",
+    "name": "Regular Chipotle Chicken Wrap",
+    "category": "Wraps",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41232",
+    "name": "Large Chipotle Chicken Wrap",
+    "category": "Wraps",
+    "price": 12.0,
+    "price_delivery": 13.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41233",
+    "name": "Regular Honey Soy Beef Wrap",
+    "category": "Wraps",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41234",
+    "name": "Large Honey Soy Beef Wrap",
+    "category": "Wraps",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41235",
+    "name": "Regular Green Goddess Wrap",
+    "category": "Wraps",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41236",
+    "name": "Large Green Goddess Wrap",
+    "category": "Wraps",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41237",
+    "name": "Regular Moroccan Chickpea Wrap",
+    "category": "Wraps",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41238",
+    "name": "Large Moroccan Chickpea Wrap",
+    "category": "Wraps",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41239",
+    "name": "Regular Prawn and Lime Wrap",
+    "category": "Wraps",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41240",
+    "name": "Large Prawn and Lime Wrap",
+    "category": "Wraps",
+    "price": 14.5,
+    "price_delivery": 16.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41241",
+    "name": "Regular Garden Salad",
+    "category": "Salads",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41242",
+    "name": "Large Garden Salad",
+    "category": "Salads",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41243",
+    "name": "Regular Caesar Salad",
+    "category": "Salads",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41244",
+    "name": "Large Caesar Salad",
+    "category": "Salads",
+    "price": 14.5,
+    "price_delivery": 16.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41245",
+    "name": "Regular Roast Pumpkin Salad",
+    "category": "Salads",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41246",
+    "name": "Large Roast Pumpkin Salad",
+    "category": "Salads",
+    "price": 15.0,
+    "price_delivery": 16.5,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41247",
+    "name": "Regular Quinoa Salad",
+    "category": "Salads",
+    "price": 12.0,
+    "price_delivery": 13.5,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41248",
+    "name": "Large Quinoa Salad",
+    "category": "Salads",
+    "price": 15.5,
+    "price_delivery": 17.0,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41249",
+    "name": "Regular Noodle Salad",
+    "category": "Salads",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41250",
+    "name": "Large Noodle Salad",
+    "category": "Salads",
+    "price": 14.5,
+    "price_delivery": 16.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41251",
+    "name": "Regular Couscous Salad",
+    "category": "Salads",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41252",
+    "name": "Large Couscous Salad",
+    "category": "Salads",
+    "price": 13.5,
+    "price_delivery": 15.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41253",
+    "name": "Regular Kale and Apple Salad",
+    "category": "Salads",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41254",
+    "name": "Large Kale and Apple Salad",
+    "category": "Salads",
+    "price": 15.0,
+    "price_delivery": 16.5,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41255",
+    "name": "Regular Potato Salad",
+    "category": "Salads",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41256",
+    "name": "Large Potato Salad",
+    "category": "Salads",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41257",
+    "name": "Regular Tuna Nicoise Salad",
+    "category": "Salads",
+    "price": 13.0,
+    "price_delivery": 14.5,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41258",
+    "name": "Large Tuna Nicoise Salad",
+    "category": "Salads",
+    "price": 17.0,
+    "price_delivery": 18.5,
+    "unit_cost": 5.5
+  },
+  {
+    "plu": "41259",
+    "name": "Regular Chicken and Grain Salad",
+    "category": "Salads",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41260",
+    "name": "Large Chicken and Grain Salad",
+    "category": "Salads",
+    "price": 16.0,
+    "price_delivery": 17.5,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41261",
+    "name": "Blueberry Muffin",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41262",
+    "name": "Warm Blueberry Muffin",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41263",
+    "name": "Mini Blueberry Muffin",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41264",
+    "name": "Chocolate Muffin",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41265",
+    "name": "Warm Chocolate Muffin",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41266",
+    "name": "Mini Chocolate Muffin",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41267",
+    "name": "Banana Muffin",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41268",
+    "name": "Warm Banana Muffin",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41269",
+    "name": "Mini Banana Muffin",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41270",
+    "name": "Cheese Scone",
+    "category": "Bakery",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41271",
+    "name": "Warm Cheese Scone",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41272",
+    "name": "Mini Cheese Scone",
+    "category": "Bakery",
+    "price": 2.5,
+    "price_delivery": 4.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41273",
+    "name": "Fruit Scone",
+    "category": "Bakery",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41274",
+    "name": "Warm Fruit Scone",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41275",
+    "name": "Mini Fruit Scone",
+    "category": "Bakery",
+    "price": 2.5,
+    "price_delivery": 4.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41276",
+    "name": "Cinnamon Scroll",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41277",
+    "name": "Warm Cinnamon Scroll",
+    "category": "Bakery",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41278",
+    "name": "Mini Cinnamon Scroll",
+    "category": "Bakery",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41279",
+    "name": "Almond Croissant",
+    "category": "Bakery",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41280",
+    "name": "Warm Almond Croissant",
+    "category": "Bakery",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41281",
+    "name": "Mini Almond Croissant",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41282",
+    "name": "Butter Croissant",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41283",
+    "name": "Warm Butter Croissant",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41284",
+    "name": "Mini Butter Croissant",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41285",
+    "name": "Pain au Chocolat",
+    "category": "Bakery",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41286",
+    "name": "Warm Pain au Chocolat",
+    "category": "Bakery",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41287",
+    "name": "Mini Pain au Chocolat",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41288",
+    "name": "Seeded Roll",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41289",
+    "name": "Warm Seeded Roll",
+    "category": "Bakery",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41290",
+    "name": "Mini Seeded Roll",
+    "category": "Bakery",
+    "price": 2.0,
+    "price_delivery": 3.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41291",
+    "name": "Olive Loaf Slice",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41292",
+    "name": "Warm Olive Loaf Slice",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41293",
+    "name": "Mini Olive Loaf Slice",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41294",
+    "name": "Lemon Slice",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41295",
+    "name": "Warm Lemon Slice",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41296",
+    "name": "Mini Lemon Slice",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41297",
+    "name": "Carrot Cake Slice",
+    "category": "Bakery",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41298",
+    "name": "Warm Carrot Cake Slice",
+    "category": "Bakery",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41299",
+    "name": "Mini Carrot Cake Slice",
+    "category": "Bakery",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41300",
+    "name": "Banana Cake Slice",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41301",
+    "name": "Warm Banana Cake Slice",
+    "category": "Bakery",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41302",
+    "name": "Mini Banana Cake Slice",
+    "category": "Bakery",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41303",
+    "name": "Anzac Biscuit",
+    "category": "Bakery",
+    "price": 2.5,
+    "price_delivery": 4.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41304",
+    "name": "Warm Anzac Biscuit",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41305",
+    "name": "Mini Anzac Biscuit",
+    "category": "Bakery",
+    "price": 2.0,
+    "price_delivery": 3.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41306",
+    "name": "Oat Cookie",
+    "category": "Bakery",
+    "price": 2.5,
+    "price_delivery": 4.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41307",
+    "name": "Warm Oat Cookie",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41308",
+    "name": "Mini Oat Cookie",
+    "category": "Bakery",
+    "price": 2.0,
+    "price_delivery": 3.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41309",
+    "name": "Chocolate Cookie",
+    "category": "Bakery",
+    "price": 2.5,
+    "price_delivery": 4.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41310",
+    "name": "Warm Chocolate Cookie",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41311",
+    "name": "Mini Chocolate Cookie",
+    "category": "Bakery",
+    "price": 2.0,
+    "price_delivery": 3.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41312",
+    "name": "Shortbread",
+    "category": "Bakery",
+    "price": 2.5,
+    "price_delivery": 4.0,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41313",
+    "name": "Warm Shortbread",
+    "category": "Bakery",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41314",
+    "name": "Mini Shortbread",
+    "category": "Bakery",
+    "price": 2.0,
+    "price_delivery": 3.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41315",
+    "name": "Apple Danish",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41316",
+    "name": "Warm Apple Danish",
+    "category": "Bakery",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41317",
+    "name": "Mini Apple Danish",
+    "category": "Bakery",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41318",
+    "name": "Custard Danish",
+    "category": "Bakery",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41319",
+    "name": "Warm Custard Danish",
+    "category": "Bakery",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41320",
+    "name": "Mini Custard Danish",
+    "category": "Bakery",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41321",
+    "name": "Sea Salt Crisps",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41322",
+    "name": "Vinegar Crisps",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41323",
+    "name": "Sweet Chilli Crisps",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41324",
+    "name": "Cheese Twists",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41325",
+    "name": "Honey Nut Mix",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41326",
+    "name": "Roasted Almonds",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41327",
+    "name": "Trail Mix",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41328",
+    "name": "Rice Crackers",
+    "category": "Snacks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41329",
+    "name": "Veggie Sticks",
+    "category": "Snacks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41330",
+    "name": "Hummus Cup",
+    "category": "Snacks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41331",
+    "name": "Yoghurt Pouch",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41332",
+    "name": "Cheese Stick Pack",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41333",
+    "name": "Popcorn Cup",
+    "category": "Snacks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41334",
+    "name": "Pretzel Pack",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41335",
+    "name": "Seed Bar",
+    "category": "Snacks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41336",
+    "name": "Oat Bar",
+    "category": "Snacks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41337",
+    "name": "Cocoa Date Ball",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41338",
+    "name": "Apple Chips",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41339",
+    "name": "Rice Cakes",
+    "category": "Snacks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41340",
+    "name": "Olive Cup",
+    "category": "Snacks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41341",
+    "name": "Pickle Cup",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41342",
+    "name": "Edamame Cup",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41343",
+    "name": "Corn Chips",
+    "category": "Snacks",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41344",
+    "name": "Salsa Cup",
+    "category": "Snacks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41345",
+    "name": "Garlic Bread",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41346",
+    "name": "Focaccia Square",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41347",
+    "name": "Cheese Toast Fingers",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41348",
+    "name": "Mini Spring Rolls",
+    "category": "Snacks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41349",
+    "name": "Vegetable Samosa",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41350",
+    "name": "Corn Fritter Bite",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41351",
+    "name": "Soup Cup",
+    "category": "Snacks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41352",
+    "name": "Miso Cup",
+    "category": "Snacks",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41353",
+    "name": "Noodle Cup",
+    "category": "Snacks",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41354",
+    "name": "Rice Paper Roll",
+    "category": "Snacks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41355",
+    "name": "Cucumber Pack",
+    "category": "Snacks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41356",
+    "name": "Carrot Stick Pack",
+    "category": "Snacks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41357",
+    "name": "Boiled Egg Pack",
+    "category": "Snacks",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41358",
+    "name": "Sushi Pair",
+    "category": "Snacks",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41359",
+    "name": "Onigiri",
+    "category": "Snacks",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41360",
+    "name": "Steamed Bun",
+    "category": "Snacks",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41361",
+    "name": "Wrap and Drink Combo",
+    "category": "Combos",
+    "price": 13.5,
+    "price_delivery": 15.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41362",
+    "name": "Large Wrap and Drink Combo",
+    "category": "Combos",
+    "price": 16.5,
+    "price_delivery": 18.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41363",
+    "name": "Weekday Wrap and Drink Combo",
+    "category": "Combos",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41364",
+    "name": "Sandwich and Drink Combo",
+    "category": "Combos",
+    "price": 13.0,
+    "price_delivery": 14.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41365",
+    "name": "Large Sandwich and Drink Combo",
+    "category": "Combos",
+    "price": 16.0,
+    "price_delivery": 17.5,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41366",
+    "name": "Weekday Sandwich and Drink Combo",
+    "category": "Combos",
+    "price": 12.0,
+    "price_delivery": 13.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41367",
+    "name": "Salad and Drink Combo",
+    "category": "Combos",
+    "price": 14.0,
+    "price_delivery": 15.5,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41368",
+    "name": "Large Salad and Drink Combo",
+    "category": "Combos",
+    "price": 17.0,
+    "price_delivery": 18.5,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41369",
+    "name": "Weekday Salad and Drink Combo",
+    "category": "Combos",
+    "price": 13.0,
+    "price_delivery": 14.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41370",
+    "name": "Breakfast and Coffee Combo",
+    "category": "Combos",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41371",
+    "name": "Large Breakfast and Coffee Combo",
+    "category": "Combos",
+    "price": 15.5,
+    "price_delivery": 17.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41372",
+    "name": "Weekday Breakfast and Coffee Combo",
+    "category": "Combos",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41373",
+    "name": "Soup and Roll Combo",
+    "category": "Combos",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41374",
+    "name": "Large Soup and Roll Combo",
+    "category": "Combos",
+    "price": 14.0,
+    "price_delivery": 15.5,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41375",
+    "name": "Weekday Soup and Roll Combo",
+    "category": "Combos",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41376",
+    "name": "Toastie and Tea Combo",
+    "category": "Combos",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41377",
+    "name": "Large Toastie and Tea Combo",
+    "category": "Combos",
+    "price": 14.5,
+    "price_delivery": 16.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41378",
+    "name": "Weekday Toastie and Tea Combo",
+    "category": "Combos",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41379",
+    "name": "Muffin and Coffee Combo",
+    "category": "Combos",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41380",
+    "name": "Large Muffin and Coffee Combo",
+    "category": "Combos",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41381",
+    "name": "Weekday Muffin and Coffee Combo",
+    "category": "Combos",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41382",
+    "name": "Salad and Wrap Combo",
+    "category": "Combos",
+    "price": 16.5,
+    "price_delivery": 18.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41383",
+    "name": "Large Salad and Wrap Combo",
+    "category": "Combos",
+    "price": 19.5,
+    "price_delivery": 21.0,
+    "unit_cost": 5.5
+  },
+  {
+    "plu": "41384",
+    "name": "Weekday Salad and Wrap Combo",
+    "category": "Combos",
+    "price": 15.5,
+    "price_delivery": 17.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41385",
+    "name": "Kids Snack Box Combo",
+    "category": "Combos",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41386",
+    "name": "Large Kids Snack Box Combo",
+    "category": "Combos",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41387",
+    "name": "Weekday Kids Snack Box Combo",
+    "category": "Combos",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41388",
+    "name": "Office Lunch Box Combo",
+    "category": "Combos",
+    "price": 17.0,
+    "price_delivery": 18.5,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41389",
+    "name": "Large Office Lunch Box Combo",
+    "category": "Combos",
+    "price": 20.0,
+    "price_delivery": 21.5,
+    "unit_cost": 5.5
+  },
+  {
+    "plu": "41390",
+    "name": "Weekday Office Lunch Box Combo",
+    "category": "Combos",
+    "price": 16.0,
+    "price_delivery": 17.5,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41391",
+    "name": "Picnic Box Combo",
+    "category": "Combos",
+    "price": 18.0,
+    "price_delivery": 19.5,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41392",
+    "name": "Large Picnic Box Combo",
+    "category": "Combos",
+    "price": 21.0,
+    "price_delivery": 22.5,
+    "unit_cost": 6.0
+  },
+  {
+    "plu": "41393",
+    "name": "Weekday Picnic Box Combo",
+    "category": "Combos",
+    "price": 17.0,
+    "price_delivery": 18.5,
+    "unit_cost": 5.0
+  },
+  {
+    "plu": "41394",
+    "name": "Two Coffee Deal Combo",
+    "category": "Combos",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41395",
+    "name": "Large Two Coffee Deal Combo",
+    "category": "Combos",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41396",
+    "name": "Weekday Two Coffee Deal Combo",
+    "category": "Combos",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41397",
+    "name": "Chocolate Brownie",
+    "category": "Desserts",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41398",
+    "name": "Mini Chocolate Brownie",
+    "category": "Desserts",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41399",
+    "name": "Share Chocolate Brownie",
+    "category": "Desserts",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41400",
+    "name": "Lemon Tart",
+    "category": "Desserts",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41401",
+    "name": "Mini Lemon Tart",
+    "category": "Desserts",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41402",
+    "name": "Share Lemon Tart",
+    "category": "Desserts",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41403",
+    "name": "Berry Cheesecake",
+    "category": "Desserts",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41404",
+    "name": "Mini Berry Cheesecake",
+    "category": "Desserts",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41405",
+    "name": "Share Berry Cheesecake",
+    "category": "Desserts",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41406",
+    "name": "Apple Crumble",
+    "category": "Desserts",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41407",
+    "name": "Mini Apple Crumble",
+    "category": "Desserts",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41408",
+    "name": "Share Apple Crumble",
+    "category": "Desserts",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41409",
+    "name": "Vanilla Slice",
+    "category": "Desserts",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41410",
+    "name": "Mini Vanilla Slice",
+    "category": "Desserts",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41411",
+    "name": "Share Vanilla Slice",
+    "category": "Desserts",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41412",
+    "name": "Chocolate Mousse",
+    "category": "Desserts",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41413",
+    "name": "Mini Chocolate Mousse",
+    "category": "Desserts",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41414",
+    "name": "Share Chocolate Mousse",
+    "category": "Desserts",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41415",
+    "name": "Banana Pudding",
+    "category": "Desserts",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41416",
+    "name": "Mini Banana Pudding",
+    "category": "Desserts",
+    "price": 3.5,
+    "price_delivery": 5.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41417",
+    "name": "Share Banana Pudding",
+    "category": "Desserts",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41418",
+    "name": "Affogato",
+    "category": "Desserts",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41419",
+    "name": "Mini Affogato",
+    "category": "Desserts",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41420",
+    "name": "Share Affogato",
+    "category": "Desserts",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41421",
+    "name": "Churros Pair",
+    "category": "Desserts",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41422",
+    "name": "Mini Churros Pair",
+    "category": "Desserts",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41423",
+    "name": "Share Churros Pair",
+    "category": "Desserts",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41424",
+    "name": "Waffle Square",
+    "category": "Desserts",
+    "price": 6.0,
+    "price_delivery": 7.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41425",
+    "name": "Mini Waffle Square",
+    "category": "Desserts",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41426",
+    "name": "Share Waffle Square",
+    "category": "Desserts",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41427",
+    "name": "Ice Cream Cup",
+    "category": "Desserts",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41428",
+    "name": "Mini Ice Cream Cup",
+    "category": "Desserts",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41429",
+    "name": "Share Ice Cream Cup",
+    "category": "Desserts",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41430",
+    "name": "Sorbet Cup",
+    "category": "Desserts",
+    "price": 4.5,
+    "price_delivery": 6.0,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41431",
+    "name": "Mini Sorbet Cup",
+    "category": "Desserts",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41432",
+    "name": "Share Sorbet Cup",
+    "category": "Desserts",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41433",
+    "name": "Tiramisu Cup",
+    "category": "Desserts",
+    "price": 6.5,
+    "price_delivery": 8.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41434",
+    "name": "Mini Tiramisu Cup",
+    "category": "Desserts",
+    "price": 5.0,
+    "price_delivery": 6.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41435",
+    "name": "Share Tiramisu Cup",
+    "category": "Desserts",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41436",
+    "name": "Panna Cotta",
+    "category": "Desserts",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41437",
+    "name": "Mini Panna Cotta",
+    "category": "Desserts",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41438",
+    "name": "Share Panna Cotta",
+    "category": "Desserts",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41439",
+    "name": "Lamington",
+    "category": "Desserts",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41440",
+    "name": "Mini Lamington",
+    "category": "Desserts",
+    "price": 3.0,
+    "price_delivery": 4.5,
+    "unit_cost": 0.5
+  },
+  {
+    "plu": "41441",
+    "name": "Share Lamington",
+    "category": "Desserts",
+    "price": 7.0,
+    "price_delivery": 8.5,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41442",
+    "name": "Fruit Tart",
+    "category": "Desserts",
+    "price": 5.5,
+    "price_delivery": 7.0,
+    "unit_cost": 1.5
+  },
+  {
+    "plu": "41443",
+    "name": "Mini Fruit Tart",
+    "category": "Desserts",
+    "price": 4.0,
+    "price_delivery": 5.5,
+    "unit_cost": 1.0
+  },
+  {
+    "plu": "41444",
+    "name": "Share Fruit Tart",
+    "category": "Desserts",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.0
+  },
+  {
+    "plu": "41445",
+    "name": "Tomato Soup",
+    "category": "Hot Food",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41446",
+    "name": "Large Tomato Soup",
+    "category": "Hot Food",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41447",
+    "name": "Pumpkin Soup",
+    "category": "Hot Food",
+    "price": 7.5,
+    "price_delivery": 9.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41448",
+    "name": "Large Pumpkin Soup",
+    "category": "Hot Food",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41449",
+    "name": "Chicken Soup",
+    "category": "Hot Food",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41450",
+    "name": "Large Chicken Soup",
+    "category": "Hot Food",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41451",
+    "name": "Minestrone",
+    "category": "Hot Food",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41452",
+    "name": "Large Minestrone",
+    "category": "Hot Food",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41453",
+    "name": "Ham Toastie",
+    "category": "Hot Food",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41454",
+    "name": "Large Ham Toastie",
+    "category": "Hot Food",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41455",
+    "name": "Kimchi Toastie",
+    "category": "Hot Food",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41456",
+    "name": "Large Kimchi Toastie",
+    "category": "Hot Food",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41457",
+    "name": "Mushroom Toastie",
+    "category": "Hot Food",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41458",
+    "name": "Large Mushroom Toastie",
+    "category": "Hot Food",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41459",
+    "name": "Lentil Stew",
+    "category": "Hot Food",
+    "price": 9.5,
+    "price_delivery": 11.0,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41460",
+    "name": "Large Lentil Stew",
+    "category": "Hot Food",
+    "price": 12.0,
+    "price_delivery": 13.5,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41461",
+    "name": "Chicken Pasta",
+    "category": "Hot Food",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41462",
+    "name": "Large Chicken Pasta",
+    "category": "Hot Food",
+    "price": 13.0,
+    "price_delivery": 14.5,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41463",
+    "name": "Baked Gnocchi",
+    "category": "Hot Food",
+    "price": 10.0,
+    "price_delivery": 11.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41464",
+    "name": "Large Baked Gnocchi",
+    "category": "Hot Food",
+    "price": 12.5,
+    "price_delivery": 14.0,
+    "unit_cost": 4.0
+  },
+  {
+    "plu": "41465",
+    "name": "Macaroni Cup",
+    "category": "Hot Food",
+    "price": 8.5,
+    "price_delivery": 10.0,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41466",
+    "name": "Large Macaroni Cup",
+    "category": "Hot Food",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41467",
+    "name": "Fried Rice Cup",
+    "category": "Hot Food",
+    "price": 9.0,
+    "price_delivery": 10.5,
+    "unit_cost": 3.0
+  },
+  {
+    "plu": "41468",
+    "name": "Large Fried Rice Cup",
+    "category": "Hot Food",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41469",
+    "name": "Noodle Bowl",
+    "category": "Hot Food",
+    "price": 11.0,
+    "price_delivery": 12.5,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41470",
+    "name": "Large Noodle Bowl",
+    "category": "Hot Food",
+    "price": 13.5,
+    "price_delivery": 15.0,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41471",
+    "name": "Dumpling Bowl",
+    "category": "Hot Food",
+    "price": 11.5,
+    "price_delivery": 13.0,
+    "unit_cost": 3.5
+  },
+  {
+    "plu": "41472",
+    "name": "Large Dumpling Bowl",
+    "category": "Hot Food",
+    "price": 14.0,
+    "price_delivery": 15.5,
+    "unit_cost": 4.5
+  },
+  {
+    "plu": "41473",
+    "name": "Baked Potato",
+    "category": "Hot Food",
+    "price": 8.0,
+    "price_delivery": 9.5,
+    "unit_cost": 2.5
+  },
+  {
+    "plu": "41474",
+    "name": "Large Baked Potato",
+    "category": "Hot Food",
+    "price": 10.5,
+    "price_delivery": 12.0,
+    "unit_cost": 3.5
+  }
+]
