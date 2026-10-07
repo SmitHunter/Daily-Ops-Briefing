@@ -5,6 +5,10 @@
 
 A **two-agent AI system** that reviews multi-site retail performance and writes a daily ops briefing. Built with the Claude API, tool use, and Flask. A scheduler (Make.com or similar) can POST `/run` and then read `/latest.json` to send the briefing to Slack, email, or the included web dashboard.
 
+![Dashboard with illustrative example briefing (not a live Claude run)](assets/dashboard.png)
+
+The screenshot is the Flask dashboard at `/`, captured from a local run of `app.py` on this VM after `python setup_data.py`. It is rendering the illustrative example briefing below — not a live Claude run (no Anthropic API key in this capture). A live-run screenshot will replace this later.
+
 ## The Problem
 
 Multi-site retail GMs are drowning in dashboards. Every store generates daily revenue, channel mix, category performance, and staffing data—but dashboards don't prioritise. By the time anyone notices a store has been underperforming for a week, it's late.
