@@ -314,10 +314,10 @@ The full system would query a data warehouse, but SQLite:
 
 MIT — see [LICENSE](LICENSE).
 
----
-Built by **Hunter Smith**, AI Engineer, Melbourne · [GitHub](https://github.com/SmitHunter) · [LinkedIn](https://www.linkedin.com/in/hunter-sm/)
-
 ## Screenshots
 
 ### Make.com Automation
 ![Make.com scenario](assets/makecom.png)
+
+---
+Built by **Hunter Smith**, AI Engineer, Melbourne · [GitHub](https://github.com/SmitHunter) · [LinkedIn](https://www.linkedin.com/in/hunter-sm/)
