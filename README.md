@@ -25,94 +25,11 @@ Two Claude agents review a synthetic 31-store network and write a daily ops brie
 > [!NOTE]
 > The dashboard is rendering the illustrative example briefing below, not a live Claude run. A live-run capture will replace it.
 
-## The Problem
-
-Multi-site retail GMs are drowning in dashboards. Every store generates daily revenue, channel mix, category performance, and staffing data—but dashboards don't prioritise. By the time anyone notices a store has been underperforming for a week, it's late.
-
-This system solves that by:
-1. **Investigating autonomously** — an Analyst agent queries the data and identifies what matters
-2. **Writing for humans** — a Writer agent produces a 60-second scannable briefing
-3. **Running daily** — triggered by a webhook, delivers the briefing where leadership reads it
-
-## How it works
-
-```mermaid
-flowchart TB
-    subgraph Trigger
-        MAKE[Make.com Scheduler]
-        WEBHOOK[Webhook /run]
-    end
-
-    subgraph "Agent System"
-        subgraph "Analyst Agent"
-            ANALYST[Claude Sonnet 5.5]
-            TOOLS[(7 SQL Tools)]
-            ANALYST <-->|tool_use| TOOLS
-        end
-        
-        subgraph "Writer Agent"
-            WRITER[Claude Sonnet 5.5]
-        end
-        
-        ANALYST -->|Structured JSON findings| WRITER
-    end
-
-    subgraph "Data Layer"
-        SQLITE[(SQLite DB)]
-        TOOLS --> SQLITE
-    end
-
-    subgraph Output
-        DASHBOARD[Web Dashboard]
-        JSON[JSON API]
-        SLACK[Slack / Email]
-    end
-
-    MAKE --> WEBHOOK
-    WRITER --> DASHBOARD
-    WRITER --> JSON
-    JSON -.->|via Make.com| SLACK
-
-    style ANALYST fill:#f9f,stroke:#333
-    style WRITER fill:#9ff,stroke:#333
-```
-
-### Two-Agent Design
-
-| Agent | Role | Tools | Output |
-|-------|------|-------|--------|
-| **Analyst** | Investigation | 7 SQL-backed tools | Structured JSON: headline, 3-6 findings with severity/evidence/actions, network stats |
-| **Writer** | Communication | None | Markdown briefing formatted for 60-second scanning |
-
-The agents have separate concerns by design:
-- The **Analyst** decides *what matters*. It has access to all the data tools and must prioritise ruthlessly—if everything looks fine, it should say so with 1-2 findings.
-- The **Writer** decides *how to say it*. It has no tools, only the Analyst's findings. Its job is voice, formatting, and scannability.
-
-This separation means the Analyst can focus on investigation without worrying about prose, and the Writer can focus on communication without worrying about data access.
-
-Both agents call `claude-sonnet-5-5`, the current generally available Sonnet ID on the [Claude API](https://docs.anthropic.com/en/docs/about-claude/models/overview).
-
-## Tools
-
-The Analyst has 7 tools that query a SQLite database:
-
-| Tool | Purpose |
-|------|---------|
-| `list_stores` | Get all 31 stores with metadata (used to resolve names to IDs) |
-| `network_summary` | High-level view: total revenue vs target, breakdowns by tier/region/channel |
-| `store_performance` | Per-store actual vs target for a period, sorted worst-first |
-| `store_trend` | Daily series for one store—distinguishes noise from sustained issues |
-| `category_performance` | Revenue by product category with week-over-week comparison |
-| `top_products` | Top sellers by revenue, filterable by category |
-| `channel_comparison` | Sales by channel (in-store, kiosk, web, app, delivery) |
-
-Tool descriptions are carefully written to guide the agent's routing decisions. For example, `network_summary` is described as "usually the first call to make" and `store_trend` is described as useful "to investigate whether a store's underperformance is a one-off or a sustained trend."
-
 ## Example output
 
 The numbers below are last-7-day aggregates from the **seeded synthetic dataset** (week ending 30 April 2026). They match `network_summary`, `store_performance`, `store_trend`, and `category_performance` on `data/pos.db` after `python setup_data.py`. Currency is rounded to the nearest dollar (Westbridge actual is $11,969.50; Northgate actual is $6,661.50). The prose is an **illustrative Writer-style briefing**, not a live Claude transcript.
 
-### Briefing (Writer Output)
+### Briefing (Writer output)
 
 ```markdown
 *Daily Ops Briefing - Thursday 30 April 2026*
@@ -141,7 +58,8 @@ No action needed.
 27 of 31 stores above target. Network revenue $474,440 vs target $430,000 (+10.3%).
 ```
 
-### Analyst Findings (Structured JSON)
+<details>
+<summary><b>Analyst findings (structured JSON)</b></summary>
 
 ```json
 {
@@ -172,6 +90,93 @@ No action needed.
 }
 ```
 
+</details>
+
+<details>
+<summary><b>Full dashboard screenshot</b></summary>
+
+<p align="center">
+  <img alt="Dashboard with illustrative example briefing (not a live Claude run)" src="assets/dashboard.png" width="720">
+</p>
+
+</details>
+
+## Problem
+
+Multi-site retail GMs are drowning in dashboards. Every store generates daily revenue, channel mix, category performance, and staffing data—but dashboards don't prioritise. By the time anyone notices a store has been underperforming for a week, it's late.
+
+- An Analyst agent queries the data and decides what matters.
+- A Writer agent turns the findings into a briefing someone can read in a minute.
+- A webhook runs it daily and delivers it where people already read.
+
+## How it works
+
+```mermaid
+flowchart TB
+    subgraph Trigger
+        MAKE[Make.com Scheduler]
+        WEBHOOK[Webhook /run]
+    end
+
+    subgraph "Agent System"
+        subgraph "Analyst Agent"
+            ANALYST[Analyst · Claude Sonnet 5.5]
+            TOOLS[(7 SQL Tools)]
+            ANALYST <-->|tool_use| TOOLS
+        end
+        
+        subgraph "Writer Agent"
+            WRITER[Writer · Claude Sonnet 5.5]
+        end
+        
+        ANALYST -->|Structured JSON findings| WRITER
+    end
+
+    subgraph "Data Layer"
+        SQLITE[(SQLite DB)]
+        TOOLS --> SQLITE
+    end
+
+    subgraph Output
+        DASHBOARD[Web Dashboard]
+        JSON[JSON API]
+        SLACK[Slack / Email]
+    end
+
+    MAKE --> WEBHOOK
+    WRITER --> DASHBOARD
+    WRITER --> JSON
+    JSON -.->|via Make.com| SLACK
+```
+
+### Two agents
+
+| Agent | Role | Tools | Output |
+|-------|------|-------|--------|
+| **Analyst** | Investigation | 7 SQL-backed tools | Structured JSON: headline, 3-6 findings with severity/evidence/actions, network stats |
+| **Writer** | Communication | None | Markdown briefing formatted for 60-second scanning |
+
+- The **Analyst** decides *what matters*: it has the data tools and must prioritise (1–2 findings if all is well).
+- The **Writer** decides *how to say it*: no tools, only the Analyst's JSON.
+
+Both agents call `claude-sonnet-5-5`, the current generally available Sonnet ID on the [Claude API](https://docs.anthropic.com/en/docs/about-claude/models/overview).
+
+### Analyst tools
+
+The Analyst has 7 tools that query a SQLite database:
+
+| Tool | Purpose |
+|------|---------|
+| `list_stores` | Get all 31 stores with metadata (used to resolve names to IDs) |
+| `network_summary` | High-level view: total revenue vs target, breakdowns by tier/region/channel |
+| `store_performance` | Per-store actual vs target for a period, sorted worst-first |
+| `store_trend` | Daily series for one store—distinguishes noise from sustained issues |
+| `category_performance` | Revenue by product category with week-over-week comparison |
+| `top_products` | Top sellers by revenue, filterable by category |
+| `channel_comparison` | Sales by channel (in-store, kiosk, web, app, delivery) |
+
+Tool descriptions are carefully written to guide the agent's routing decisions. For example, `network_summary` is described as "usually the first call to make" and `store_trend` is described as useful "to investigate whether a store's underperformance is a one-off or a sustained trend."
+
 ## Quickstart
 
 ### Prerequisites
@@ -179,34 +184,28 @@ No action needed.
 - Python 3.11+
 - [Anthropic API key](https://console.anthropic.com/)
 
-### Local Development
+### Local development
 
 ```bash
-# Clone the repository
 git clone https://github.com/SmitHunter/Daily-Ops-Briefing.git
 cd Daily-Ops-Briefing
 
-# Create virtual environment
 python -m venv .venv
 source .venv/bin/activate  # or `.venv\Scripts\activate` on Windows
 
-# Install dependencies
 pip install -r requirements.txt
 
-# Build the synthetic dataset (one-time)
 python setup_data.py
 
-# Set your API key
 export ANTHROPIC_API_KEY=sk-ant-api03-your-key-here
 
-# Run a one-shot briefing (CLI)
 python agents.py
 
-# Or start the web server
 python app.py  # Serves on http://localhost:8080
 ```
 
-### Environment Variables
+<details>
+<summary><b>Environment variables</b></summary>
 
 Copy `.env.example` to `.env` and configure:
 
@@ -221,25 +220,23 @@ BRIEFING_TOKEN=your-secret-token
 PORT=8080
 ```
 
-### Running Tests
+</details>
+
+## Tests and output checks
 
 ```bash
-# Install dev dependencies
 pip install -e ".[dev]"
 
-# Run tests (no API key needed — Claude is mocked)
 pytest
 
-# Run with coverage
 pytest --cov=. --cov-report=term-missing
 
-# Lint, format, and type-check
 ruff check .
 ruff format --check .
 mypy agents.py tools.py app.py
 ```
 
-## How output quality is checked
+### Output validators
 
 `tests/test_eval.py` defines validators for both agent outputs. They are real checks with failing cases, not a hardcoded happy-path fixture. Pytest runs them in CI (Claude is mocked). The same functions can be pointed at a live Analyst/Writer payload later.
 
@@ -261,11 +258,11 @@ mypy agents.py tools.py app.py
 - network footer mentions stores or target
 - raw JSON and placeholder tokens (`TODO`, `FIXME`, …) are rejected
 
-## Deployment
+## Deploy
 
 The system is designed for Render's free tier but works on any Python hosting.
 
-### Render (Recommended)
+### Render
 
 1. Fork this repository
 2. Create a new Web Service on [Render](https://render.com)
@@ -275,15 +272,17 @@ The system is designed for Render's free tier but works on any Python hosting.
 
 The free tier sleeps after 15 minutes of inactivity. First request after sleep takes ~30 seconds to wake.
 
-### Automation with Make.com
+### Make.com
 
 The screenshot is a Make.com scenario: **Daily at 8:00 AM**, HTTP **GET `/run`**, then **Email**.
 
 GET `/run` is a convenience alias for POST `/run`; both trigger a briefing. If a later step needs the markdown rather than just kicking off a run, read `GET /latest.json`.
 
-![Make.com scenario: daily 8:00 AM GET /run, then Email](assets/makecom.png)
+<p align="center">
+  <img alt="Make.com scenario: daily 8:00 AM GET /run, then Email" src="assets/makecom.png" width="560">
+</p>
 
-## API Endpoints
+### Endpoints
 
 | Method | Path | Description |
 |--------|------|-------------|
@@ -295,45 +294,19 @@ GET `/run` is a convenience alias for POST `/run`; both trigger a briefing. If a
 
 If `BRIEFING_TOKEN` is set, `/`, `/run`, and `/latest.json` require `?key=TOKEN` or an `X-Access-Token: TOKEN` header. `/health` stays public so uptime checks do not need the token.
 
-## Project Structure
-
-```
-.
-├── agents.py                 # Analyst + Writer agents, orchestration
-├── tools.py                  # 7 tool functions + Claude schemas
-├── app.py                    # Flask service (dashboard + API)
-├── setup_data.py             # Data pipeline runner
-├── generate_transactions.py  # Synthetic transaction generator
-├── build_products.py         # Invented product catalogue
-├── build_db.py               # JSON → SQLite loader
-├── build_stores.py           # 31-store network definition
-├── data/
-│   ├── stores.json           # Store metadata (committed)
-│   ├── products.json         # Synthetic catalogue (committed)
-│   └── pos.db                # Built at deploy time (gitignored)
-├── tests/                    # Pytest suite with mocked Claude
-│   └── test_eval.py          # Analyst/Writer output validators
-├── assets/
-│   └── makecom.png           # Make.com GET /run → Email scenario
-├── .github/workflows/ci.yml  # GitHub Actions CI
-├── pyproject.toml            # Project config, ruff, pytest
-├── requirements.txt          # Production dependencies
-└── render.yaml               # Render deployment config
-```
-
-## Design Decisions
+## Design decisions
 
 ### Why two agents instead of one?
 
 A single agent could do both investigation and writing, but separation has benefits:
-- **Clearer system prompts** — Each agent has one job with focused instructions
-- **Easier debugging** — The Analyst's JSON output is inspectable before the Writer transforms it
-- **Composability** — The Analyst findings could feed multiple outputs (Slack, email, PDF) without re-running analysis
-- **Different failure modes** — If the Writer produces bad prose, the Analyst findings are still valid
+- **Clearer system prompts.** Each agent has one job with focused instructions
+- **Easier debugging.** The Analyst's JSON output is inspectable before the Writer transforms it
+- **Composability.** The Analyst findings could feed multiple outputs (Slack, email, PDF) without re-running analysis
+- **Different failure modes.** If the Writer produces bad prose, the Analyst findings are still valid
 
 ### Why tool descriptions matter more than prompt tuning
 
-Early iterations spent time tuning the Analyst's system prompt. The real breakthrough came from rewriting tool descriptions to explain *when* each tool fits in the workflow:
+In development, rewriting tool descriptions to say *when* each tool fits improved routing more than system-prompt tuning did:
 - "Usually the first call to make" (network_summary)
 - "Use to investigate whether underperformance is a one-off or a sustained trend" (store_trend)
 - "Use to drill into category-level findings" (top_products)
@@ -363,6 +336,40 @@ The full system would query a data warehouse, but SQLite:
 - **Each run costs a Claude API sequence.** The Analyst may loop up to 12 times (`max_tokens=4096` per call, with tool use). The Writer is one further call (`max_tokens=2048`). Both use `claude-sonnet-5-5`. This repo does not log token usage or dollar cost.
 - **GET `/run` is a convenience alias for POST.** It triggers a new briefing (not idempotent). The Make.com screenshot uses GET because that is easy to wire in an HTTP module.
 - **Render free tier sleeps after 15 minutes idle.** The first request after sleep takes ~30 seconds to wake. The latest briefing is stored in process memory, so a sleep or restart clears it until the next `/run`.
+
+## Project layout
+
+<details>
+<summary><b>Repository tree</b></summary>
+
+```text
+.
+├── agents.py                 # Analyst + Writer agents, orchestration
+├── tools.py                  # 7 tool functions + Claude schemas
+├── app.py                    # Flask service (dashboard + API)
+├── setup_data.py             # Data pipeline runner
+├── generate_transactions.py  # Synthetic transaction generator
+├── build_products.py         # Invented product catalogue
+├── build_db.py               # JSON → SQLite loader
+├── build_stores.py           # 31-store network definition
+├── data/
+│   ├── stores.json           # Store metadata (committed)
+│   ├── products.json         # Synthetic catalogue (committed)
+│   └── pos.db                # Built at deploy time (gitignored)
+├── tests/                    # Pytest suite with mocked Claude
+│   └── test_eval.py          # Analyst/Writer output validators
+├── assets/
+│   ├── brand/                # Light/dark README banners
+│   ├── dashboard.png         # Full illustrative dashboard capture
+│   ├── dashboard-hero.png    # Crop below the first finding card
+│   └── makecom.png           # Make.com GET /run → Email scenario
+├── .github/workflows/ci.yml  # GitHub Actions CI
+├── pyproject.toml            # Project config, ruff, pytest
+├── requirements.txt          # Production dependencies
+└── render.yaml               # Render deployment config
+```
+
+</details>
 
 ## License
 
