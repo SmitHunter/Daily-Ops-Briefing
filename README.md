@@ -90,7 +90,7 @@ Tool descriptions are carefully written to guide the agent's routing decisions. 
 
 ## Example Output
 
-The numbers below are last-7-day aggregates from the **seeded synthetic dataset** (week ending 30 April 2026). The prose is an **illustrative Writer-style briefing**, not a live Claude transcript.
+The numbers below are last-7-day aggregates from the **seeded synthetic dataset** (week ending 30 April 2026). They match `network_summary`, `store_performance`, `store_trend`, and `category_performance` on `data/pos.db` after `python setup_data.py`. Currency is rounded to the nearest dollar (Westbridge actual is $11,969.50; Northgate actual is $6,661.50). The prose is an **illustrative Writer-style briefing**, not a live Claude transcript.
 
 ### Briefing (Writer Output)
 
