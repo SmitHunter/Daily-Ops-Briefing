@@ -1,7 +1,8 @@
 # Daily Ops Briefing
 
 [![CI](https://github.com/SmitHunter/Daily-Ops-Briefing/actions/workflows/ci.yml/badge.svg)](https://github.com/SmitHunter/Daily-Ops-Briefing/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A **two-agent AI system** that reviews multi-site retail performance and writes a daily ops briefing. Built with the Claude API, tool use, and Flask. A scheduler (Make.com or similar) can POST `/run` and then read `/latest.json` to send the briefing to Slack, email, or the included web dashboard.
 
@@ -312,6 +313,9 @@ The full system would query a data warehouse, but SQLite:
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+Built by **Hunter Smith**, AI Engineer, Melbourne · [GitHub](https://github.com/SmitHunter) · [LinkedIn](https://www.linkedin.com/in/hunter-sm/)
 
 ## Screenshots
 
