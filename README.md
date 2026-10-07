@@ -1,14 +1,29 @@
-# Daily Ops Briefing
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/brand/banner-light.svg">
+    <img alt="Daily Ops Briefing: Analyst and Writer Claude agents that turn store data into a briefing" src="assets/brand/banner-light.svg" width="100%">
+  </picture>
+</p>
 
-[![CI](https://github.com/SmitHunter/Daily-Ops-Briefing/actions/workflows/ci.yml/badge.svg)](https://github.com/SmitHunter/Daily-Ops-Briefing/actions/workflows/ci.yml)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<p align="center">
+  <a href="https://github.com/SmitHunter/Daily-Ops-Briefing/actions/workflows/ci.yml"><img alt="CI status" src="https://img.shields.io/github/actions/workflow/status/SmitHunter/Daily-Ops-Briefing/ci.yml?branch=main&label=CI&style=flat"></a>
+  <a href="pyproject.toml"><img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-3776AB?style=flat"></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-yellow?style=flat"></a>
+</p>
 
-A **two-agent AI system** that reviews multi-site retail performance and writes a daily ops briefing. Built with the Claude API, tool use, and Flask. A scheduler (Make.com or similar) can call `/run` and then read `/latest.json` to send the briefing to email or the included web dashboard.
+<p align="center"><a href="#example-output">Example output</a> · <a href="#quickstart">Quickstart</a> · <a href="#how-it-works">How it works</a> · <a href="#limitations">Limitations</a></p>
 
-![Dashboard with illustrative example briefing (not a live Claude run)](assets/dashboard.png)
+Two Claude agents review a synthetic 31-store network and write a daily ops briefing. The Analyst queries SQLite through 7 tools and returns structured findings; the Writer turns them into a 60-second Markdown briefing. Flask serves a dashboard, `/latest.json`, and a `/run` webhook for a scheduler such as Make.com.
 
-The screenshot is the Flask dashboard at `/`, captured from a local run of `app.py` on this VM after `python setup_data.py`. It is rendering the illustrative example briefing below — not a live Claude run (no Anthropic API key in this capture). A live-run screenshot will replace this later.
+<p align="center">
+  <img alt="Flask dashboard showing the illustrative example briefing: network summary and the first finding" src="assets/dashboard-hero.png" width="720">
+</p>
+
+<p align="center"><sub>Flask dashboard at <code>/</code> from a local run on seeded synthetic data</sub></p>
+
+> [!NOTE]
+> The dashboard is rendering the illustrative example briefing below, not a live Claude run. A live-run capture will replace it.
 
 ## The Problem
 
@@ -19,7 +34,7 @@ This system solves that by:
 2. **Writing for humans** — a Writer agent produces a 60-second scannable briefing
 3. **Running daily** — triggered by a webhook, delivers the briefing where leadership reads it
 
-## Architecture
+## How it works
 
 ```mermaid
 flowchart TB
@@ -93,7 +108,7 @@ The Analyst has 7 tools that query a SQLite database:
 
 Tool descriptions are carefully written to guide the agent's routing decisions. For example, `network_summary` is described as "usually the first call to make" and `store_trend` is described as useful "to investigate whether a store's underperformance is a one-off or a sustained trend."
 
-## Example Output
+## Example output
 
 The numbers below are last-7-day aggregates from the **seeded synthetic dataset** (week ending 30 April 2026). They match `network_summary`, `store_performance`, `store_trend`, and `category_performance` on `data/pos.db` after `python setup_data.py`. Currency is rounded to the nearest dollar (Westbridge actual is $11,969.50; Northgate actual is $6,661.50). The prose is an **illustrative Writer-style briefing**, not a live Claude transcript.
 
@@ -157,7 +172,7 @@ No action needed.
 }
 ```
 
-## Setup
+## Quickstart
 
 ### Prerequisites
 
