@@ -3,7 +3,7 @@
 [![CI](https://github.com/SmitHunter/Daily-Ops-Briefing/actions/workflows/ci.yml/badge.svg)](https://github.com/SmitHunter/Daily-Ops-Briefing/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-A **two-agent AI system** that reviews multi-site retail performance and writes a daily ops briefing. Built with the Claude API, tool use, and Flask. A scheduler (Make.com or similar) can POST `/run` and then read `/latest.json` to send the briefing to Slack, email, or the included web dashboard.
+A **two-agent AI system** that reviews multi-site retail performance and writes a daily ops briefing. Built with the Claude API, tool use, and Flask. A scheduler (Make.com or similar) can call `/run` and then read `/latest.json` to send the briefing to email or the included web dashboard.
 
 ## The Problem
 
@@ -125,7 +125,7 @@ No action needed.
 
 ```json
 {
-      "headline": "Network up 10.3% on target; two stores need attention",
+  "headline": "Network up 10.3% on target; two stores need attention",
   "findings": [
     {
       "title": "Westbridge under target by 17.5%",
@@ -219,6 +219,28 @@ ruff format --check .
 mypy agents.py tools.py app.py
 ```
 
+## How output quality is checked
+
+`tests/test_eval.py` defines validators for both agent outputs. They are real checks with failing cases, not a hardcoded happy-path fixture. Pytest runs them in CI (Claude is mocked). The same functions can be pointed at a live Analyst/Writer payload later.
+
+**Analyst JSON** (`findings_errors`):
+
+- `headline` is a non-empty string
+- `findings` is a list of 1–8 items (more than 8 is treated as poor prioritisation)
+- each finding has `title`, `severity`, `category`, `evidence`, `interpretation`
+- `severity` is one of `high`, `medium`, `low`
+- `evidence` is an object
+- `stats` includes `stores_above_target`, `stores_below_target`, `network_revenue`, `network_target`, `variance_pct`, all numeric
+
+**Writer markdown** (`briefing_errors`):
+
+- header contains `*Daily Ops Briefing` and a date
+- at least one severity emoji (🔴 / 🟡 / 🟢)
+- key numbers are bolded with `*...*`
+- a high-severity finding includes an `Action:` line
+- network footer mentions stores or target
+- raw JSON and placeholder tokens (`TODO`, `FIXME`, …) are rejected
+
 ## Deployment
 
 The system is designed for Render's free tier but works on any Python hosting.
@@ -235,9 +257,11 @@ The free tier sleeps after 15 minutes of inactivity. First request after sleep t
 
 ### Automation with Make.com
 
-1. Create a Make.com scenario with a Schedule trigger (e.g., 7am daily)
-2. Add an HTTP module that POSTs to `https://your-app.onrender.com/run?key=YOUR_TOKEN`
-3. Add a Slack/Email module that reads from `/latest.json` and sends the briefing
+The screenshot is a Make.com scenario: **Daily at 8:00 AM**, HTTP **GET `/run`**, then **Email**.
+
+GET `/run` is a convenience alias for POST `/run`; both trigger a briefing. If a later step needs the markdown rather than just kicking off a run, read `GET /latest.json`.
+
+![Make.com scenario: daily 8:00 AM GET /run, then Email](assets/makecom.png)
 
 ## API Endpoints
 
@@ -268,6 +292,9 @@ If `BRIEFING_TOKEN` is set, `/`, `/run`, and `/latest.json` require `?key=TOKEN`
 │   ├── products.json         # Synthetic catalogue (committed)
 │   └── pos.db                # Built at deploy time (gitignored)
 ├── tests/                    # Pytest suite with mocked Claude
+│   └── test_eval.py          # Analyst/Writer output validators
+├── assets/
+│   └── makecom.png           # Make.com GET /run → Email scenario
 ├── .github/workflows/ci.yml  # GitHub Actions CI
 ├── pyproject.toml            # Project config, ruff, pytest
 ├── requirements.txt          # Production dependencies
@@ -309,11 +336,14 @@ The full system would query a data warehouse, but SQLite:
 - Is fast enough for the 30-day, 31-store dataset
 - Is built from JSON at deploy time, keeping the repo portable
 
+## Limitations
+
+- **Synthetic data only.** The catalogue, 31 stores, and 30 days of transactions are generated (`setup_data.py`, fixed random seed). There is no live POS feed. Store names are invented.
+- **The README example is not a live Claude run.** The Writer markdown and Analyst JSON under Example Output are an illustrative payload aligned with the seeded last-7-day aggregates. Tests mock the Claude API; CI does not call Anthropic.
+- **Each run costs a Claude API sequence.** The Analyst may loop up to 12 times (`max_tokens=4096` per call, with tool use). The Writer is one further call (`max_tokens=2048`). Both use `claude-sonnet-5-5`. This repo does not log token usage or dollar cost.
+- **GET `/run` is a convenience alias for POST.** It triggers a new briefing (not idempotent). The Make.com screenshot uses GET because that is easy to wire in an HTTP module.
+- **Render free tier sleeps after 15 minutes idle.** The first request after sleep takes ~30 seconds to wake. The latest briefing is stored in process memory, so a sleep or restart clears it until the next `/run`.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
-## Screenshots
-
-### Make.com Automation
-![Make.com scenario](assets/makecom.png)
