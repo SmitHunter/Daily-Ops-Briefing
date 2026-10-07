@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Daily Ops Briefing: Analyst and Writer Claude agents that turn store data into a briefing">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#2DD4BF"/></pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.55"/></linearGradient>
+    <mask id="m"><rect x="640" y="0" width="560" height="300" fill="url(#fade)"/></mask>
+    <clipPath id="card"><rect x="0.5" y="0.5" width="1199" height="299" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="300" fill="#0F172A"/>
+    <rect x="640" y="0" width="560" height="300" fill="url(#dots)" mask="url(#m)"/>
+    <rect x="0" y="0" width="6" height="300" fill="#2DD4BF"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="299" rx="16" fill="none" stroke="#1E293B"/>
+  <text x="56" y="70" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" fill="#2DD4BF" letter-spacing="0.5">SmitHunter / Daily-Ops-Briefing</text>
+  <text x="56" y="132" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#F1F5F9" letter-spacing="-1">Daily Ops Briefing</text>
+  <text x="56" y="176" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" fill="#94A3B8">Analyst and Writer Claude agents that turn store data into a briefing</text>
+  <rect x="56" y="206" width="223" height="44" rx="10" fill="#111C2E" stroke="#1E293B"/><text x="76" y="234" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" fill="#E2E8F0">$ python agents.py</text>
+</svg>
