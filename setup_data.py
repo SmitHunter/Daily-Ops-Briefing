@@ -6,9 +6,10 @@ If data/pos.db exists, exits immediately. Otherwise runs:
   1. generate_transactions.py -> data/transactions.json (deterministic via seed)
   2. build_db.py -> data/pos.db (SQLite from JSON)
 
-Reason for this design: keeps the repo small (only 90KB of source data files,
-no 28MB DB). DB is built deterministically from a fixed random seed so every
-deploy produces identical data - useful for testing and demos.
+Reason for this design: keeps the repo small (source JSON only; the SQLite
+DB is built at deploy time). DB is built deterministically from a fixed
+random seed so every deploy produces identical data - useful for testing
+and demos.
 """
 
 import os
@@ -42,4 +43,5 @@ if os.path.exists("data/transactions.json"):
     os.remove("data/transactions.json")
     print("\nRemoved intermediate data/transactions.json", flush=True)
 
-print(f"\nSetup complete. {DB_PATH} ready.", flush=True)
+size_mb = os.path.getsize(DB_PATH) / (1024 * 1024)
+print(f"\nSetup complete. {DB_PATH} ready ({size_mb:.1f} MB).", flush=True)

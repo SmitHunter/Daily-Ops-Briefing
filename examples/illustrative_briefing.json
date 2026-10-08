@@ -1,0 +1,93 @@
+{
+  "status": "ok",
+  "date": "2026-04-30",
+  "generated_at": "illustrative example (not a live Claude run)",
+  "illustrative": true,
+  "analyst_findings": {
+    "headline": "Network up 10.3% on target; two stores need attention",
+    "findings": [
+      {
+        "title": "Westbridge under target by 17.5%",
+        "severity": "high",
+        "category": "store_performance",
+        "evidence": {
+          "store_id": "ST008",
+          "actual": 11969.5,
+          "target": 14500,
+          "variance_pct": -17.5,
+          "days_under_target_in_last_7": 5,
+          "daily_series": [
+            {"date": "2026-04-24", "revenue": 1447.5, "target": 2071.43},
+            {"date": "2026-04-25", "revenue": 2097.5, "target": 2071.43},
+            {"date": "2026-04-26", "revenue": 2100.5, "target": 2071.43},
+            {"date": "2026-04-27", "revenue": 1422.5, "target": 2071.43},
+            {"date": "2026-04-28", "revenue": 1588.0, "target": 2071.43},
+            {"date": "2026-04-29", "revenue": 1509.5, "target": 2071.43},
+            {"date": "2026-04-30", "revenue": 1804.0, "target": 2071.43}
+          ]
+        },
+        "interpretation": "Sustained underperformance over the past week. Not noise.",
+        "recommended_action": "Check in with store manager to understand what's driving the shortfall."
+      },
+      {
+        "title": "Northgate struggling to ramp",
+        "severity": "high",
+        "category": "store_performance",
+        "evidence": {
+          "store_id": "ST031",
+          "actual": 6661.5,
+          "target": 8000,
+          "variance_pct": -16.7,
+          "days_under_target_in_last_7": 5,
+          "daily_series": [
+            {"date": "2026-04-24", "revenue": 891.5, "target": 1142.86},
+            {"date": "2026-04-25", "revenue": 1169.0, "target": 1142.86},
+            {"date": "2026-04-26", "revenue": 1222.0, "target": 1142.86},
+            {"date": "2026-04-27", "revenue": 746.0, "target": 1142.86},
+            {"date": "2026-04-28", "revenue": 760.5, "target": 1142.86},
+            {"date": "2026-04-29", "revenue": 879.0, "target": 1142.86},
+            {"date": "2026-04-30", "revenue": 993.5, "target": 1142.86}
+          ]
+        },
+        "interpretation": "Newest store at -16.7% variance, missing target 5 of the last 7 days. Opened in February—still finding its feet.",
+        "recommended_action": "Review staffing levels and local marketing activation."
+      },
+      {
+        "title": "Snacks softening",
+        "severity": "medium",
+        "category": "product",
+        "evidence": {
+          "category": "Snacks",
+          "revenue": 16298.0,
+          "wow_change_pct": -4.9
+        },
+        "interpretation": "Snack sales down 4.9% week-over-week network-wide. Not critical, but worth watching.",
+        "recommended_action": null
+      },
+      {
+        "title": "Wraps trending up",
+        "severity": "low",
+        "category": "trend",
+        "evidence": {
+          "category": "Wraps",
+          "revenue": 20154.5,
+          "wow_change_pct": 4.0
+        },
+        "interpretation": "Wrap sales up 4.0% WoW.",
+        "recommended_action": null
+      }
+    ],
+    "stats": {
+      "stores_above_target": 27,
+      "stores_below_target": 4,
+      "network_revenue": 474440,
+      "network_target": 430000,
+      "variance_pct": 10.3
+    }
+  },
+  "briefing_markdown": "*Daily Ops Briefing - Thursday 30 April 2026*\n\nNetwork up *10.3%* on target this week, with 27 of 31 stores hitting numbers.\n\n🔴 *Westbridge under target by 17.5%*\nRevenue at *$11,970* against a *$14,500* target. This is the fifth day\nbelow target in the last seven—a pattern, not a blip.\nAction: Check in with store manager to understand what's driving the shortfall.\n\n🔴 *Northgate struggling to ramp*\nNewest store at *-16.7%* variance, missing target 5 of the last 7 days.\nOpened in February—still finding its feet.\nAction: Review staffing levels and local marketing activation.\n\n🟡 *Snacks softening*\nSnack sales down *4.9%* week-over-week network-wide. Not critical, but\nworth watching.\n\n🟢 *Wraps trending up*\nWrap sales up *4.0%* WoW.\nNo action needed.\n\n---\n27 of 31 stores above target. Network revenue $474,440 vs target $430,000 (+10.3%).\n",
+  "metadata": {
+    "analyst_iterations": 0,
+    "model": "claude-sonnet-5-5"
+  }
+}

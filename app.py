@@ -12,11 +12,13 @@ Designed for deployment on Render (free tier). Wakes on first request after idle
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import threading
 from datetime import UTC, datetime
 from html import escape as _esc
+from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
@@ -33,6 +35,36 @@ _last_error: dict[str, Any] | None = None
 _run_lock = threading.Lock()
 
 ACCESS_TOKEN = os.environ.get("BRIEFING_TOKEN")
+EXAMPLE_BRIEFING_LABEL = "illustrative example (not a live Claude run)"
+
+
+def _env_enabled(name: str) -> bool:
+    return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _example_briefing_path() -> Path:
+    return Path(__file__).resolve().parent / "examples" / "illustrative_briefing.json"
+
+
+def load_illustrative_briefing(path: Path | None = None) -> dict[str, Any]:
+    """Load the committed illustrative example briefing (not a live Claude run)."""
+    src = path or _example_briefing_path()
+    if not src.is_file():
+        raise FileNotFoundError(f"EXAMPLE_BRIEFING is set but {src} is missing")
+    with src.open(encoding="utf-8") as fh:
+        payload: Any = json.load(fh)
+    if not isinstance(payload, dict):
+        raise ValueError(f"illustrative briefing at {src} must be a JSON object")
+    return payload
+
+
+def apply_example_briefing_if_enabled() -> bool:
+    """Populate the in-memory cache from examples/ when EXAMPLE_BRIEFING is set."""
+    global _latest_briefing
+    if not _env_enabled("EXAMPLE_BRIEFING"):
+        return False
+    _latest_briefing = load_illustrative_briefing()
+    return True
 
 
 def _check_token() -> tuple[Response, int] | None:
@@ -187,6 +219,8 @@ def dashboard() -> Response | tuple[Response, int]:
         body = _render_body(_latest_briefing)
         date_label = _latest_briefing.get("date", "—")
         gen = _latest_briefing.get("generated_at", "")
+        if _latest_briefing.get("illustrative"):
+            gen = EXAMPLE_BRIEFING_LABEL
         meta_label = f"Generated {gen} · {_latest_briefing['metadata']['analyst_iterations']} analyst iterations"
 
     return Response(_PAGE.format(date=date_label, meta=meta_label, body=body), mimetype="text/html")
@@ -776,6 +810,9 @@ _PAGE = """<!doctype html>
   </footer>
 </body>
 </html>"""
+
+
+apply_example_briefing_if_enabled()
 
 
 if __name__ == "__main__":
