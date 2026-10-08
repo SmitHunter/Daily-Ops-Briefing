@@ -78,6 +78,30 @@ class TestDashboard:
             response = client.get("/?key=secret123")
             assert b'href="/run?key=secret123"' in response.data
 
+    def test_example_briefing_flag_labels_dashboard(self, client, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.setenv("EXAMPLE_BRIEFING", "1")
+        assert app_module.apply_example_briefing_if_enabled() is True
+        response = client.get("/")
+        assert response.status_code == 200
+        assert b"illustrative example (not a live Claude run)" in response.data
+        assert b"No briefing yet" not in response.data
+        assert b"Snacks softening" in response.data
+        assert b"Sandwiches" not in response.data
+
+    def test_example_briefing_flag_off_keeps_empty_state(self, client, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.setenv("EXAMPLE_BRIEFING", "0")
+        assert app_module.apply_example_briefing_if_enabled() is False
+        response = client.get("/")
+        assert b"No briefing yet" in response.data
+
+    def test_illustrative_payload_passes_output_validators(self) -> None:
+        from tests.test_eval import briefing_errors, findings_errors
+
+        payload = app_module.load_illustrative_briefing()
+        assert payload["illustrative"] is True
+        assert findings_errors(payload["analyst_findings"]) == []
+        assert briefing_errors(payload["briefing_markdown"]) == []
+
 
 class TestLatestJson:
     """Tests for the /latest.json endpoint."""

@@ -20,14 +20,14 @@ Two Claude agents review a synthetic 31-store network and write a daily ops brie
   <img alt="Flask dashboard showing the illustrative example briefing: network summary and the first finding" src="assets/dashboard-hero.png" width="720">
 </p>
 
-<p align="center"><sub>Flask dashboard at <code>/</code> from a local run on seeded synthetic data</sub></p>
+<p align="center"><sub>Flask dashboard at <code>/</code> with <code>EXAMPLE_BRIEFING=1</code> on seeded synthetic data</sub></p>
 
 > [!NOTE]
-> The dashboard is rendering the illustrative example briefing below, not a live Claude run. A live-run capture will replace it.
+> The screenshot is the illustrative example loaded with <code>EXAMPLE_BRIEFING=1</code>, not a live Claude run.
 
 ## Example output
 
-The numbers below are last-7-day aggregates from the **seeded synthetic dataset** (week ending 30 April 2026). They match `network_summary`, `store_performance`, `store_trend`, and `category_performance` on `data/pos.db` after `python setup_data.py`. Currency is rounded to the nearest dollar (Westbridge actual is $11,969.50; Northgate actual is $6,661.50). The prose is an **illustrative Writer-style briefing**, not a live Claude transcript.
+The numbers below are last-7-day aggregates from the **seeded synthetic dataset** (week ending 30 April 2026). They match `network_summary`, `store_performance`, `store_trend`, and `category_performance` on `data/pos.db` after `python setup_data.py`. Currency is rounded to the nearest dollar (Westbridge actual is $11,969.50; Northgate actual is $6,661.50). Snacks is the largest category decline (−4.9% WoW; $16,298). The prose is an **illustrative Writer-style briefing**, not a live Claude transcript. The dashboard payload is committed at `examples/illustrative_briefing.json` and loaded when `EXAMPLE_BRIEFING=1`.
 
 ### Briefing (Writer output)
 
@@ -46,8 +46,8 @@ Newest store at *-16.7%* variance, missing target 5 of the last 7 days.
 Opened in February—still finding its feet.
 Action: Review staffing levels and local marketing activation.
 
-🟡 *Sandwiches softening*
-Sandwich sales down *4.5%* week-over-week network-wide. Not critical, but 
+🟡 *Snacks softening*
+Snack sales down *4.9%* week-over-week network-wide. Not critical, but 
 worth watching.
 
 🟢 *Wraps trending up*
@@ -182,7 +182,7 @@ Tool descriptions are carefully written to guide the agent's routing decisions. 
 ### Prerequisites
 
 - Python 3.11+
-- [Anthropic API key](https://console.anthropic.com/)
+- [Anthropic API key](https://console.anthropic.com/) — required only for a live Analyst/Writer run, not for `EXAMPLE_BRIEFING=1`
 
 ### Local development
 
@@ -197,12 +197,16 @@ pip install -r requirements.txt
 
 python setup_data.py
 
+# Dashboard with the illustrative example (no API key)
+EXAMPLE_BRIEFING=1 python app.py  # Serves on http://localhost:8080
+
+# Live briefing (requires an API key)
 export ANTHROPIC_API_KEY=sk-ant-api03-your-key-here
-
 python agents.py
-
-python app.py  # Serves on http://localhost:8080
+python app.py
 ```
+
+Without `EXAMPLE_BRIEFING=1` or a completed `/run`, the dashboard shows "No briefing yet".
 
 <details>
 <summary><b>Environment variables</b></summary>
@@ -210,8 +214,11 @@ python app.py  # Serves on http://localhost:8080
 Copy `.env.example` to `.env` and configure:
 
 ```bash
-# Required
+# Required for a live briefing run
 ANTHROPIC_API_KEY=sk-ant-api03-your-key-here
+
+# Optional: load the illustrative example briefing at startup (no API key)
+EXAMPLE_BRIEFING=1
 
 # Optional: protect /run endpoint with a token
 BRIEFING_TOKEN=your-secret-token
@@ -304,14 +311,12 @@ A single agent could do both investigation and writing, but separation has benef
 - **Composability.** The Analyst findings could feed multiple outputs (Slack, email, PDF) without re-running analysis
 - **Different failure modes.** If the Writer produces bad prose, the Analyst findings are still valid
 
-### Why tool descriptions matter more than prompt tuning
+### Why tool descriptions are written to guide routing
 
-In development, rewriting tool descriptions to say *when* each tool fits improved routing more than system-prompt tuning did:
+Tool descriptions state *when* each tool fits in the investigation, not only what they return. Routing is chosen from the tool list, so the role-in-the-flow language belongs there rather than only in a longer system prompt:
 - "Usually the first call to make" (network_summary)
 - "Use to investigate whether underperformance is a one-off or a sustained trend" (store_trend)
 - "Use to drill into category-level findings" (top_products)
-
-The agent routes much better when tools explain their role in the investigation flow, not just what they return.
 
 ### Why synthetic data?
 
@@ -332,7 +337,7 @@ The full system would query a data warehouse, but SQLite:
 ## Limitations
 
 - **Synthetic data only.** The catalogue, 31 stores, and 30 days of transactions are generated (`setup_data.py`, fixed random seed). There is no live POS feed. Store names are invented.
-- **The README example is not a live Claude run.** The Writer markdown and Analyst JSON under Example Output are an illustrative payload aligned with the seeded last-7-day aggregates. Tests mock the Claude API; CI does not call Anthropic.
+- **The README example is not a live Claude run.** The Writer markdown and Analyst JSON under Example Output are an illustrative payload aligned with the seeded last-7-day aggregates (`examples/illustrative_briefing.json`, loaded by `EXAMPLE_BRIEFING=1`). Tests mock the Claude API; CI does not call Anthropic.
 - **Each run costs a Claude API sequence.** The Analyst may loop up to 12 times (`max_tokens=4096` per call, with tool use). The Writer is one further call (`max_tokens=2048`). Both use `claude-sonnet-5-5`. This repo does not log token usage or dollar cost.
 - **GET `/run` is a convenience alias for POST.** It triggers a new briefing (not idempotent). The Make.com screenshot uses GET because that is easy to wire in an HTTP module.
 - **Render free tier sleeps after 15 minutes idle.** The first request after sleep takes ~30 seconds to wake. The latest briefing is stored in process memory, so a sleep or restart clears it until the next `/run`.
@@ -356,6 +361,8 @@ The full system would query a data warehouse, but SQLite:
 │   ├── stores.json           # Store metadata (committed)
 │   ├── products.json         # Synthetic catalogue (committed)
 │   └── pos.db                # Built at deploy time (gitignored)
+├── examples/
+│   └── illustrative_briefing.json  # EXAMPLE_BRIEFING=1 dashboard payload
 ├── tests/                    # Pytest suite with mocked Claude
 │   └── test_eval.py          # Analyst/Writer output validators
 ├── assets/
